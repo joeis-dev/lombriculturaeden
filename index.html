@@ -1,29 +1,295 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Humus de Lombriz - Información de Producto</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-stone-50 text-stone-900 font-sans">
-    <main class="max-w-md mx-auto p-6 text-center">
-        <header class="mb-8">
-            <h1 class="text-3xl font-bold text-green-700">Lombricultura Edion</h1>
-            <p class="text-sm text-stone-500 italic">Nutrición orgánica para tus cultivos</p>
-        </header>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lombricultura Edén | Humus de Lombriz 100% Orgánico - Zapotlanejo, Jalisco</title>
+  <meta name="description" content="Productores de humus de lombriz orgánico en Zapotlanejo, Jalisco. Humus líquido, sólido y pie de cría de lombriz roja californiana. Envíos a todo México.">
+  <meta name="keywords" content="humus de lombriz, vermicomposta, lombriz roja californiana, abono orgánico, fertilizante natural, Eisenia foetida, Zapotlanejo, Jalisco, compostaje">
+  <meta name="author" content="Lombricultura Edén">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://lombriculturaeden.github.io/">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Lombricultura Edén | Humus de Lombriz 100% Orgánico">
+  <meta property="og:description" content="Productores de humus de lombriz orgánico en Zapotlanejo, Jalisco. Envíos a todo México.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lombriculturaeden.github.io/">
+  <meta property="og:locale" content="es_MX">
+  
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Lombricultura Edén",
+    "description": "Productores de humus de lombriz orgánico en Zapotlanejo, Jalisco",
+    "url": "https://lombriculturaeden.github.io",
+    "telephone": "+523731863639",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Santa Teresa #4, San José del Río",
+      "addressLocality": "Zapotlanejo",
+      "addressRegion": "Jalisco",
+      "postalCode": "45430",
+      "addressCountry": "MX"
+    },
+    "openingHours": "Mo-Fr 9:00-18:00",
+    "priceRange": "$$"
+  }
+  </script>
+  
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    :root {
+      --earth: #3d2b1f;
+      --moss: #4a6741;
+      --sage: #7a9e6e;
+      --cream: #f5f0e8;
+      --warm: #e8dcc8;
+      --gold: #c9a84c;
+      --rust: #a0522d;
+      --light-moss: #d4e6ce;
+    }
 
-        <div class="space-y-4">
-            <a href="#analisis" class="block w-full p-4 bg-white border-2 border-green-600 rounded-xl shadow-sm hover:bg-green-50 transition">
-                📊 Ver Análisis de Laboratorio (Próximamente)
-            </a>
-            <a href="#guia" class="block w-full p-4 bg-white border-2 border-green-600 rounded-xl shadow-sm hover:bg-green-50 transition">
-                🌱 Guía de Aplicación Detallada
-            </a>
-            <a href="https://wa.me/tu-numero" class="block w-full p-4 bg-green-600 text-white rounded-xl shadow-md hover:bg-green-700 transition font-bold">
-                📱 Contacto Directo WhatsApp
-            </a>
-        </div>
-    </main>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--cream);
+      color: var(--earth);
+      min-height: 100vh;
+    }
+
+    .home-header {
+      text-align: center;
+      padding: 40px 20px 30px;
+      background: linear-gradient(180deg, var(--light-moss) 0%, var(--cream) 100%);
+    }
+
+    .brand-tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--sage);
+      margin-bottom: 12px;
+    }
+
+    .home-header h1 {
+      font-size: clamp(36px, 8vw, 64px);
+      font-weight: 900;
+      color: var(--earth);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .home-header h1 span {
+      color: var(--moss);
+    }
+
+    .home-header .divider {
+      width: 60px;
+      height: 3px;
+      background: var(--gold);
+      margin: 16px auto;
+      border-radius: 2px;
+    }
+
+    .home-header .header-sub {
+      font-size: 14px;
+      color: var(--rust);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    .nav-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      min-height: calc(100vh - 220px);
+      gap: 4px;
+      padding: 20px;
+      background: var(--warm);
+    }
+
+    .nav-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 30px 20px;
+      border-radius: 16px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .nav-box::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .nav-box:hover::before {
+      opacity: 1;
+    }
+
+    .nav-box:hover {
+      transform: scale(1.02);
+      box-shadow: 0 12px 40px rgba(61,43,31,0.2);
+    }
+
+    .nav-box .icon {
+      font-size: 48px;
+      margin-bottom: 16px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .nav-box .title {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .nav-box .desc {
+      font-size: 13px;
+      opacity: 0.85;
+      position: relative;
+      z-index: 1;
+      max-width: 200px;
+    }
+
+    .box-catalogo {
+      background: linear-gradient(135deg, var(--moss) 0%, #5a7d51 100%);
+      color: white;
+    }
+    .box-catalogo::before {
+      background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, transparent 100%);
+    }
+
+    .box-manuales {
+      background: linear-gradient(135deg, var(--earth) 0%, #5a4535 100%);
+      color: white;
+    }
+    .box-manuales::before {
+      background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, transparent 100%);
+    }
+
+    .box-analisis {
+      background: linear-gradient(135deg, var(--rust) 0%, #b86a3d 100%);
+      color: white;
+    }
+    .box-analisis::before {
+      background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, transparent 100%);
+    }
+
+    .box-lotes {
+      background: linear-gradient(135deg, var(--gold) 0%, #d4b05c 100%);
+      color: var(--earth);
+    }
+    .box-lotes::before {
+      background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, transparent 100%);
+    }
+
+    .box-nosotros {
+      background: linear-gradient(135deg, var(--sage) 0%, #8aae7e 100%);
+      color: white;
+    }
+    .box-nosotros::before {
+      background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, transparent 100%);
+    }
+
+    .box-preguntas {
+      background: linear-gradient(135deg, var(--light-moss) 0%, #e4f0de 100%);
+      color: var(--earth);
+    }
+    .box-preguntas::before {
+      background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, transparent 100%);
+    }
+
+    .home-footer {
+      text-align: center;
+      padding: 20px;
+      background: var(--earth);
+      color: rgba(255,255,255,0.7);
+      font-size: 12px;
+    }
+
+    .home-footer strong {
+      color: var(--sage);
+    }
+
+    @media (max-width: 600px) {
+      .nav-grid {
+        grid-template-columns: 1fr;
+        min-height: auto;
+      }
+      .nav-box {
+        padding: 40px 20px;
+        min-height: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="home-header">
+    <div class="brand-tag">🌱 Vermicultura · Zapotlanejo, Jalisco</div>
+    <h1>Lombricultura <span>Edén</span></h1>
+    <div class="divider"></div>
+    <div class="header-sub">Productos 100% orgánicos · Lombriz Roja Californiana</div>
+  </header>
+
+  <nav class="nav-grid">
+    <a href="catalogo.html" class="nav-box box-catalogo">
+      <span class="icon">🛒</span>
+      <span class="title">Catálogo</span>
+      <span class="desc">Precios y productos disponibles</span>
+    </a>
+    <a href="manuales.html" class="nav-box box-manuales">
+      <span class="icon">📖</span>
+      <span class="title">Manuales</span>
+      <span class="desc">Guías de uso y aplicación</span>
+    </a>
+    <a href="analisis.html" class="nav-box box-analisis">
+      <span class="icon">🔬</span>
+      <span class="title">Análisis</span>
+      <span class="desc">Resultados de laboratorio</span>
+    </a>
+    <a href="lotes.html" class="nav-box box-lotes">
+      <span class="icon">📊</span>
+      <span class="title">Lotes</span>
+      <span class="desc">TDS y pH por lote</span>
+    </a>
+    <a href="nosotros.html" class="nav-box box-nosotros">
+      <span class="icon">🏡</span>
+      <span class="title">Nosotros</span>
+      <span class="desc">Conoce nuestra historia</span>
+    </a>
+    <a href="preguntas.html" class="nav-box box-preguntas">
+      <span class="icon">❓</span>
+      <span class="title">Preguntas</span>
+      <span class="desc">Respuestas frecuentes</span>
+    </a>
+  </nav>
+
+  <footer class="home-footer">
+    <strong>Lombricultura Edén</strong> · Zapotlanejo, Jalisco · 
+    <a href="https://wa.me/3731863639" style="color: var(--sage);">WhatsApp</a>
+  </footer>
+
+  <div class="floating-buttons">
+    <a href="index.html" class="floating-btn home-btn" title="Ir al inicio">🏠</a>
+    <button class="floating-btn up-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="Subir">↑</button>
+  </div>
 </body>
 </html>

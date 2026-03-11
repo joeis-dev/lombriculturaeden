@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosotros - Lombricultura Edén | Humus de Lombriz Zapotlanejo</title>
+  <meta name="description" content="Conoce la historia de Lombricultura Edén. Productores de humus de lombriz orgánico en Zapotlanejo, Jalisco con más de 5 años de experiencia.">
+  <meta name="keywords" content="humus de lombriz, vermicomposta, nosotros, historia, Zapotlanejo, Jalisco, productores locales">
+  <meta name="author" content="Lombricultura Edén">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://lombriculturaeden.github.io/nosotros.html">
+  <meta property="og:title" content="Nosotros - Lombricultura Edén">
+  <meta property="og:description" content="Conoce la historia de Lombricultura Edén, productores de humus orgánico en Zapotlanejo.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lombriculturaeden.github.io/nosotros.html">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Lombricultura Edén",
+    "url": "https://lombriculturaeden.github.io/nosotros.html",
+    "telephone": "+523731863639",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Zapotlanejo",
+      "addressRegion": "Jalisco",
+      "addressCountry": "MX"
+    }
+  }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    :root {
+      --earth: #3d2b1f;
+      --moss: #4a6741;
+      --sage: #7a9e6e;
+      --cream: #f5f0e8;
+      --warm: #e8dcc8;
+      --gold: #c9a84c;
+      --rust: #a0522d;
+      --light-moss: #d4e6ce;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--cream);
+      color: var(--earth);
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    .page { max-width: 900px; margin: 0 auto; }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--moss);
+      font-weight: 600;
+      margin-bottom: 30px;
+      font-size: 14px;
+    }
+
+    .header { text-align: center; margin-bottom: 48px; }
+
+    .brand-tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--sage);
+      margin-bottom: 12px;
+    }
+
+    .header h1 {
+      font-size: clamp(32px, 6vw, 52px);
+      font-weight: 900;
+      color: var(--earth);
+      line-height: 1.1;
+      margin-bottom: 10px;
+    }
+
+    .header h1 span { color: var(--moss); }
+
+    .divider {
+      width: 50px; height: 3px;
+      background: var(--gold);
+      margin: 16px auto;
+      border-radius: 2px;
+    }
+
+    .intro-text {
+      text-align: center;
+      font-size: 16px;
+      color: #555;
+      line-height: 1.8;
+      margin-bottom: 40px;
+    }
+
+    .story-section {
+      background: white;
+      border-radius: 20px;
+      padding: 40px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 24px rgba(61,43,31,0.08);
+    }
+
+    .story-section h2 {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--earth);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .story-section p {
+      font-size: 15px;
+      line-height: 1.8;
+      color: #555;
+      margin-bottom: 16px;
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 24px;
+    }
+
+    .value-card {
+      background: var(--cream);
+      border-radius: 16px;
+      padding: 24px;
+      text-align: center;
+    }
+
+    .value-icon {
+      font-size: 40px;
+      margin-bottom: 12px;
+    }
+
+    .value-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--moss);
+      margin-bottom: 8px;
+    }
+
+    .value-desc {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin: 30px 0;
+    }
+
+    .stat-box {
+      background: var(--moss);
+      color: white;
+      border-radius: 16px;
+      padding: 24px 16px;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-size: 32px;
+      font-weight: 700;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .stat-label {
+      font-size: 12px;
+      opacity: 0.85;
+    }
+
+    .location-card {
+      background: linear-gradient(135deg, var(--moss), #5a7d51);
+      color: white;
+      border-radius: 20px;
+      padding: 32px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .location-icon {
+      font-size: 48px;
+    }
+
+    .location-info h3 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .location-info p {
+      font-size: 14px;
+      opacity: 0.9;
+      line-height: 1.6;
+    }
+
+    .contact-section {
+      background: white;
+      border-radius: 20px;
+      padding: 32px;
+      margin-top: 24px;
+      box-shadow: 0 4px 24px rgba(61,43,31,0.08);
+      text-align: center;
+    }
+
+    .contact-section h3 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .contact-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .contact-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 24px;
+      border-radius: 12px;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .contact-btn:hover {
+      transform: scale(1.02);
+    }
+
+    .contact-btn.whatsapp {
+      background: #25D366;
+      color: white;
+    }
+
+    .contact-btn.facebook {
+      background: #1877F2;
+      color: white;
+    }
+
+    .contact-btn.instagram {
+      background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      .stats-row {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .location-card {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <a href="index.html" class="back-link">← Volver al inicio</a>
+
+    <div class="header">
+      <span class="brand-tag">🏡 Conócenos</span>
+      <h1>Nuestra <span>Historia</span></h1>
+      <div class="divider"></div>
+    </div>
+
+    <p class="intro-text">
+      Somos una familia dedicada a la vermicultura en Zapotlanejo, Jalisco. 
+      Nuestro compromiso es ofrecer productos 100% orgánicos de la más alta calidad, 
+      producidos con amor y respeto por el medio ambiente.
+    </p>
+
+    <div class="story-section">
+      <h2>🌱 Cómo Empezamos</h2>
+      <p>
+        Todo comenzó hace varios años cuando buscamos una forma de reducir nuestros residuos orgánicos 
+        y mejorar la calidad de nuestras plantas de jardín. Investigando sobre compostaje, 
+        descubrimos el increíble mundo de la lombriz roja californiana.
+      </p>
+      <p>
+        Lo que empezó como un proyecto familiar para autoconsumo, creció rápidamente. 
+        Vecinos y amigos comenzaron a preguntar por nuestro "humus mágico" para sus huertos y macetas. 
+        Así nació <strong>Lombricultura Edén</strong>.
+      </p>
+      <p>
+        Hoy producimos humus líquido y sólido de alta calidad, criamos lombrices para quienes 
+        quieren iniciar su propio vermicompostaje, y compartimos nuestro conocimiento con 
+        toda la comunidad.
+      </p>
+    </div>
+
+    <div class="story-section">
+      <h2>💚 Nuestros Valores</h2>
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon">🌿</div>
+          <div class="value-title">100% Orgánico</div>
+          <div class="value-desc">No usamos químicos sintéticos. Todo nuestro proceso es natural y sostenible.</div>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">💪</div>
+          <div class="value-title">Calidad Premier</div>
+          <div class="value-desc">Cada lote es analizado para garantizar pH, TDS y concentración óptimos.</div>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">💬</div>
+          <div class="value-title">Asesoría Personal</div>
+          <div class="value-desc">Te acompañamos después de la compra. Cualquier duda, resolved via WhatsApp.</div>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">📦</div>
+          <div class="value-title">Envíos a Todo México</div>
+          <div class="value-desc">Llegamos a donde estés. Empacamos con cuidado para que llegue en perfecto estado.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats-row">
+      <div class="stat-box">
+        <span class="stat-number">5+</span>
+        <span class="stat-label">Años de experiencia</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-number">100%</span>
+        <span class="stat-label">Orgánico certificado</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-number">500+</span>
+        <span class="stat-label">Clientes satisfechos</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-number">3</span>
+        <span class="stat-label">Productos principales</span>
+      </div>
+    </div>
+
+    <div class="location-card">
+      <div class="location-icon">📍</div>
+      <div class="location-info">
+        <h3>Visítanos en Zapotlanejo</h3>
+        <p>
+          Santa Teresa #4, San José del Río<br>
+          Zapotlanejo, Jalisco · CP 45430<br>
+          Entregas personales sin costo adicional
+        </p>
+      </div>
+    </div>
+
+    <div class="contact-section">
+      <h3>📱 Contáctanos</h3>
+      <div class="contact-buttons">
+        <a href="https://wa.me/3731863639" class="contact-btn whatsapp">
+          💬 WhatsApp
+        </a>
+        <a href="#" class="contact-btn facebook">
+          📘 Facebook
+        </a>
+        <a href="#" class="contact-btn instagram">
+          📸 Instagram
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="floating-buttons">
+    <a href="index.html" class="floating-btn home-btn" title="Ir al inicio">🏠</a>
+    <button class="floating-btn up-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="Subir">↑</button>
+  </div>
+</body>
+</html>
